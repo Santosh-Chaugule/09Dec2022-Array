@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 56-JS Data Type-Array Day 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS write here */
+    </style>
+    <script src="script.js"></script>
+    <script>
+      // JS code write here
+      // let array1=[1,2,3,"santosh",{},[],true]
+    </script>
+  </head>
+  <body>
+    <em class="mycar"></em>
+    <strong data-x="y"></strong>
+    <script>
+      // JS code write here
+
+      let students = ["A", "B", "C", "D"];
+      //elements/items/members
+
+      //1 way to create an Array
+      console.log(students[0]);
+      console.log(students[1]);
+      console.log(students[2]);
+
+      //2.way of creating an array
+      let array1 = new Array("TATA", "SUZUKI", `MAHINDRA`); //new ClassName()
+
+      window.alert(array1[2]);
+
+      let e = document.querySelector("em.mycar");
+      e.innerHTML = array1[1];
+      e.style.color = "red";
+      //   console.log(e);
+
+      let friends = []; //declare
+
+      friends[0] = "Onkar"; //initialization
+      friends[1] = "Yogesh"; //initialization
+      friends[2] = "Shekhar"; //initialization
+
+      console.log(friends[0]);
+      friends[3] = "Virag";
+      friends[3] = "Shubham";
+
+      //document.write
+      document.write("<h1>" + friends[3] + "</h1>");
+
+      let s = document.querySelector('strong[data-x="y"]');
+      s.innerHTML = "My Fav cars are " + array1;
+      console.log(s);
+
+      let $allnews = [
+        {
+          heading: "ok",
+          details: "",
+        },
+        {},
+        {},
+      ]; //Array of Object.
+    </script>
+  </body>
+</html>
